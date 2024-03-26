@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music Player</title>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="player-container">
+            <h1>My Music Player</h1>
+            <audio id="audio" controls>
+                <source id="audioSource" src="" type="audio/mp3">
+            </audio>
+
+            <div class="buttons">
+                <button onclick="playPrevious()">
+                    <img src="https://cdn-icons-png.flaticon.com/512/318/318477.png" alt="">
+                </button>
+                <button onclick="togglePlayPause()">
+                    <img id="playImg" src="https://static.vecteezy.com/system/resources/previews/009/992/357/large_2x/pause-icon-sign-symbol-design-free-png.png" alt="">
+                </button>
+                <button onclick="playNext()">
+                    <img src="https://cdn-icons-png.flaticon.com/512/181/181669.png" alt="">
+                </button>
+            </div>
+
+            <div class="playlist">
+                <ol id="playlist">
+                    <li class="playlist-music" id="music1" onclick="playMusic('music1')"><a href="music/Cheque-Satisfied-(JustNaija.com).mp3" style="pointer-events: none">Cheque-Satisfied</a></li>
+                    <li class="playlist-music" id="music2" onclick="playMusic('music2')"><a href="music/Cheque-Hollywood-(JustNaija.com).mp3" style="pointer-events: none">Cheque-Hollywood</a></li>
+                    <li class="playlist-music" id="music3" onclick="playMusic('music3')"><a href="music/Cheque-Odun-(JustNaija.com).mp3" style="pointer-events: none">Cheque-Odun</a></li>
+                    <li class="playlist-music" id="music4" onclick="playMusic('music4')"><a href="music/12-The-Cavemen-Azana-ft-PC-Lapez-(JustNaija.com).mp3" style="pointer-events: none">The-Cavemen-Azana-ft-PC-Lapez</a></li>
+                    <li class="playlist-music" id="music5" onclick="playMusic('music5')"><a href="music/05-Adekunle-Gold-Ogaranya-(JustNaija.com).mp3" style="pointer-events: none">Adekunle-Gold-Ogaranya</a></li>
+                    <li class="playlist-music" id="music6" onclick="playMusic('music6')"><a href="music/09-Kizz-Daniel-Feran-Mi-ft-Johnny-Drille-(JustNaija.com).mp3" style="pointer-events: none">Kizz-Daniel-Feran-Mi-ft-Johnny-Drille</a></li>
+                    <li class="playlist-music" id="music7" onclick="playMusic('music7')"><a href="music/Made In Lagos Album (Deluxe)/01-Wizkid-Reckless-(JustNaija.com).mp3" style="pointer-events: none">Wizkid-Reckless</a></li>
+                    <li class="playlist-music" id="music8" onclick="playMusic('music8')"><a href="music/Made In Lagos Album (Deluxe)/12-Wizkid-Roma-ft-Terri-(JustNaija.com).mp3" style="pointer-events: none">Wizkid-Roma-ft-Terri</a></li>
+                    <li class="playlist-music" id="music8" onclick="playMusic('music8')"><a href="music/Falz_Simi_-_Chemistry_(MPmania.com).mp3" style="pointer-events: none">Chemistry</a></li>
+                    <li class="playlist-music" id="music9" onclick="playMusic('music9')"><a href="./music/You Belong With Me - Taylor Swift (Lyrics).mp3" style="pointer-events: none">You Belong With Me - Taylor Swift</a></li>
+                </ol>
+            </div>
+            <h4 id="trackTitle"></h4>
+        </div>
+    </div>
+
+    <!-- Script JS -->
+    <script src="./script.js"></script>
+</body>
+</html>
